@@ -1,0 +1,98 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="box">  
+    <img src="logow.png" width="300px" id="gg">  
+
+    <div class="box2">  
+    أ/حمدي دراز 
+
+    <div class="box4">  
+
+        <button id="kk">
+            <img src="more.png" width="100px">
+        </button>
+
+        <div class="ss" align="right">
+
+         <center>
+            <img src="none.png" id="closeSS" align="center">
+         </center>
+
+            : صفحاتنا
+
+            <hr id="jj">
+
+        </div>
+
+    </div> 
+</div>
+    </div>
+
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <center>
+        <br><br><br>
+
+        <img src="logob.png" width="100%">
+
+        <input type="text" id="text" placeholder="ادخل الكود">
+
+        <br><br>
+
+       <br><br><br><br>
+
+        <input type="button" value="تأكيد" id="bb" onclick="go()">
+
+        <br><br><br><br><br>
+        
+    </center>
+
+<script>
+function go() {
+
+    const code = document.getElementById('text').value.trim();
+
+    if(code) {
+
+        window.location.href =
+        "loading2.html?code=" + encodeURIComponent(code);
+
+    } else {
+
+        alert('please enter your code');
+
+    }
+}
+</script>
+
+<script>
+let ss = document.querySelector(".ss");
+let openBtn = document.getElementById("kk");
+let closeBtn = document.getElementById("closeSS");
+
+openBtn.addEventListener("click", function () {
+
+    ss.style.opacity = "1";
+    ss.style.visibility = "visible";
+
+});
+
+closeBtn.addEventListener("click", function () {
+
+    ss.style.opacity = "0";
+    ss.style.visibility = "hidden";
+
+});
+</script>
+
+    </body>
+</html>

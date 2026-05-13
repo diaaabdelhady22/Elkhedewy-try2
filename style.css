@@ -1,0 +1,197 @@
+body {
+    background-color: #030303;
+    color: white;
+    text-align: center;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+}
+
+.box {
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 170px;
+    position: fixed;
+    display: flex;
+    color: black;
+}
+
+.box2 {
+    position: fixed;
+    right: 150;
+    font-size: 80px;
+    top: 20;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#b1 {
+    width: 100%;
+    height: 200px;
+    background-color: wight;
+    border-radius: 60px;
+    font-size: 100px;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+    transition: 0.5s;
+}
+
+#ff {
+    border-radius: 1000px;
+}
+
+#b1:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    height: 220px;
+    border-radius: 30px;
+}
+
+/* particles */
+.particles{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particles span{
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: move 10s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+    }
+}
+
+.particles span:nth-child(1){left:10%; animation-duration:7s;}
+.particles span:nth-child(2){left:20%; animation-duration:9s;}
+.particles span:nth-child(3){left:30%; animation-duration:6s;}
+.particles span:nth-child(4){left:40%; animation-duration:8s;}
+.particles span:nth-child(5){left:50%; animation-duration:10s;}
+.particles span:nth-child(6){left:60%; animation-duration:7s;}
+.particles span:nth-child(7){left:70%; animation-duration:9s;}
+.particles span:nth-child(8){left:80%; animation-duration:6s;}
+.particles span:nth-child(9){left:90%; animation-duration:8s;}
+.particles span:nth-child(10){left:95%; animation-duration:11s;}
+
+.box4 {
+    right: 20;
+    position: fixed;
+    top: 30;
+}
+
+.ss {
+    font-size: 100px;
+    text-align: right;
+    background-color: white;
+    color: black;
+    width: 100%;
+    align: right;
+    margin-left: auto;
+    border-radius: 20px;
+    height: 70%;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+
+#jj {
+    height: 5px;
+    background-color: black;
+    border: none;
+}
+
+#kk {
+    background: none;
+    border: none;
+}
+
+#closeSS {
+    display: block;
+    margin: auto;
+    position: fixed;
+    cursor: pointer;
+    width: 70px;
+    top: 260;
+    left: 60;
+}
+#text {
+    width: 100%;
+    height: 200px;
+    bacbackground-color: white;
+    color: black;
+    border: none;
+    border-radius: 60px;
+    font-size: 150px;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+    text-align: center;
+}
+
+#bb {
+    width: 50%;
+    height: 200px;
+    background-color: wight;
+    border-radius: 60px;
+    font-size: 100px;
+    font-family: "Lateef", serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+    transition: 0.5s;
+}
+
+.name {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    color: black;
+    font-size: 150px;
+    border-radius: 60px;
+}
+
+#bb:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    height: 200px;
+    border-radius: 30px;
+    width: 100%;
+}
